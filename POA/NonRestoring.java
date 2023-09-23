@@ -29,10 +29,10 @@ public class NonRestoring{
         while(count>0){
             System.out.println("\n");
             System.out.println("Count:"+count);
-            System.out.println("\nA:"+A);
-            System.out.println("\nQ:"+m);
             A=A.substring(1)+m.charAt(0);
             m=m.substring(1);
+			System.out.println("\nA:"+A);
+            System.out.println("\nQ:"+m);
             if(A.charAt(0)=='0')
             {
                 A=binaryadd(A,get2scomplement(m1));                
