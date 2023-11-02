@@ -7,25 +7,37 @@ public class booths{
         
         System.out.println("Enter Multiplier:");
         int b = sc.nextInt(); 
-
         String m =binary(a);
         String m1 =binary(b);
-
         int x = m.length();
         int y = m1.length();
         int c=0;
-        if(x>y){
+		if(x>y)
         c=x;
-        for (int i = 0; i < c-y ; i++) {
-			m1= "0"+m1;
-		}
-        }
-        else{
-        c=y;
-        for (int i = 0; i < c-x ; i++) {
+		else
+		c=y;
+		if(a>0)
+		{
+			for (int i = 0; i < c-x ; i++) {
 			m = "0"+m;
 		} 
-        } 
+		}
+		else{
+			for (int i = 0; i < c-x ; i++) {
+			m = "1"+m;
+		} 
+		}
+		if(b>0)
+		{
+			for (int i = 0; i < c-y ; i++) {
+			m1 = "0"+m1;
+		} 
+		}
+		else{
+			for (int i = 0; i < c-y ; i++) {
+			m1 = "1"+m1;
+		} 
+		}
         System.out.println("Binary Multiplicand(M):"+m);
 		System.out.println("Binary Multiplier(M1):"+m1);
         String A="";
@@ -40,7 +52,7 @@ public class booths{
         int count =c;
         while(count>0){
             System.out.println("\n");
-            System.out.println("Count:"+count);
+            System.out.println("Iteration:"+count);
         if(qq1.equals("10")){
         String minusm=get2scomplement(m);
         A=binaryadd(A,minusm);
@@ -93,7 +105,6 @@ public class booths{
 
 public static String get2scomplement(String s1)
 {
-    //1's complement
     String s2 = "";
 		for (int i = 0; i < s1.length(); i++) { 
 
