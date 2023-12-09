@@ -66,16 +66,25 @@ def print_iter(a, q, q0):
     print(f'Storing bit: {q0}', end='\n\n')
 
 
-a = int(input('Enter Multiplicand : '))
-b = int(input('Enter Multiplier : '))
-
-M, Q = binary_conv(a, b)
-
-
-
+a = int(input('Enter Multiplicand(M) : '))
+b = int(input('Enter Multiplier(Q) : '))
+if(a>0 and b>0):
+    M, Q = binary_conv(a, b)
+elif(a<0 and b>0):
+    M, Q = binary_conv(a, b)
+    M=two_comp(M)
+elif(a>0 and b<0):
+    M, Q = binary_conv(a, b)
+    Q=two_comp(Q)
+else:
+    M, Q = binary_conv(a, b)
+    M=two_comp(M)
+    Q=two_comp(Q)
+    
+    
 M_neg = two_comp(M)
 
-print(f'Multiplier: {M}\nMultiplicand: {Q}\n -Multiplier: {M_neg}', end='\n\n')
+print(f'Multiplier: {Q}\nMultiplicand: {M}\n -Multiplicand: {M_neg}', end='\n\n')
 
 
 A = '0'*len(M)
