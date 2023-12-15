@@ -1,0 +1,27 @@
+<cricket>
+    <player id="45">
+        <name>Rohit Sharma</name>
+        <ipl>Mumbai Indians</ipl>
+        <description>Hitman</description>
+    </player>
+    <player id="7">
+        <name>MS Dhoni</name>
+        <ipl>Chennai Super Kings</ipl>
+        <description>Captain Cool and finisher</description>
+    </player>
+    <player id="21">
+        <name>Jasprit Bumrah</name>
+        <ipl>Mumbai Indians</ipl>
+        <description>Master of yorkers</description>
+    </player>
+    <player id="19">
+        <name>Rishabh Pant</name>
+        <ipl>Delhi Capitals</ipl>
+        <description>Explosive wicketkeeper-batsman</description>
+    </player>
+    <player id="18">
+        <name>Virat Kohli</name>
+        <ipl>Royal Challengers Bangalore</ipl>
+        <description>Modern-day batting maestro</description>
+    </player>
+</cricket>
