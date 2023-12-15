@@ -17,7 +17,7 @@ for player in root.iter('player'):
 
 data = pd.DataFrame({'Jersey no': p_id, 'name': name, 'ipl': ipl, 'description': description})
 print(data)
-search=input("Enter search id:")
+search=input("Enter Jersey No:")
 if search in data['Jersey no'].values:
     player_details = data[data['Jersey no'] == search]
     print("Details of player with ID", search, ":\n", player_details)
