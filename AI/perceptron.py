@@ -41,13 +41,14 @@ for i in range(epochs):
 print("Final W after ", epochs, "epochs:")
 print(W) 
 j=0
-
+#test_data input can be taken i have directly entered
+#[1,0,0,1,0,0,1,1,0] this is test data
 net = np.dot([1,0,0,1,0,0,1,1,0], W)
         
 if (net <= 0):
-    op = 0
+    op = 'L'
 elif net > 0:
-    op = 1
+    op = 'M'
     
-print("op",":", op)
+print("Classified as:", op)
         
